@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CRUD Productos Ingresar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <p/><H2> CRUD DE PRODUCTOS</H2>
+        <hr> 
+        <h3>Ingresar nuevo producto</h3>
+        <form class="form-horizontal" action="../control/controladorproductos.php" method="POST">
+            <div class="form-group">
+              <label for="Identificador" class="col-lg-2 control-label">Identificador:</label>
+              <div class="col-lg-10">
+                  <input type="number" class="form-control" id="identificador" name="id" placeholder=" (7845)" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Nombre" class="col-lg-2 control-label">Nombre:</label>
+              <div class="col-lg-10">
+                  <input type="text" class="form-control" id="nombre" name="nom" placeholder=" (Mouse)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Descripcion" class="col-lg-2 control-label">Descripcion:</label>
+              <div class="col-lg-10">
+                  <input type="text" class="form-control" id="Descripcion" name="des" placeholder=" (Mouse LED Azul modelo 27G223BB, Conector USB )">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Marca" class="col-lg-2 control-label">Marca:</label>
+              <div class="col-lg-10">
+                  <input type="text" class="form-control" id="marca" name="mar" placeholder=" (OMEGA)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Precio" class="col-lg-2 control-label">Precio:</label>
+              <div class="col-lg-10">
+                  <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <span class="input-group-addon">0.00</span>
+                    <input type="number" class="form-control" id="precio" name="prec">
+              </div> 
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <button type="submit" name ="actingr" class="btn btn-primary">Registrar</button>
+              </div>
+            <!-- </div> 
+            <p> {Mensaje} </p>
+            -->
+            <hr>
+             <a href="http://localhost/PhpMvcWong/index.php"> Regresar </a>
+        </form>
+    </body>
+</html>
